@@ -2,5 +2,5 @@ git add .
 git commit -m 'msg'
 git remote add origin https://github.com/projectbullseye/property-management.git
 git branch -M main
-git remote set-url origin https://projectbullseye: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@github.com/projectbullseye/property-management.git
+git remote set-url origin https://projectbullseye:<TOKEN>@github.com/projectbullseye/property-management.git
 git push --set-upstream origin main
