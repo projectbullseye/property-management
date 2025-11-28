@@ -1,5 +1,0 @@
-git add .
-git commit -m 'msg'
-git remote add origin https://github.com/projectbullseye/property-management.git
-git branch -M main
-git push --set-upstream origin main
