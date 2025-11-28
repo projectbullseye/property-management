@@ -1,7 +1,15 @@
 #git steps:
+
+#first time
+git init
 git add .
 git commit -m 'msg'
 git remote add origin https://github.com/projectbullseye/property-management.git
 git branch -M main
 git remote set-url origin https://projectbullseye:<TOKEN>@github.com/projectbullseye/property-management.git
+git push
+
+#subsequent time
+git add .
+git commit -m 'msg'
 git push
