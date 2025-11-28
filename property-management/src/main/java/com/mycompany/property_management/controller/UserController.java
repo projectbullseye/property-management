@@ -18,11 +18,18 @@ public class UserController {
     UserService userService;
 
     @PostMapping("/register")
-    public ResponseEntity<UserDTO> saveProperty(@RequestBody UserDTO userDTO){
+    public ResponseEntity<UserDTO> register(@RequestBody UserDTO userDTO){
 
-        //System.out.println(propertyDTO);
         userDTO = userService.registerUser(userDTO);
         ResponseEntity<UserDTO> responseEntity = new ResponseEntity<>(userDTO, HttpStatus.CREATED);
+        return responseEntity;
+    }
+
+    @PostMapping("/login")
+    public ResponseEntity<UserDTO> login(@RequestBody UserDTO userDTO){
+
+        userDTO = userService.login(userDTO.getOwnerEmail(),userDTO.getPassword());
+        ResponseEntity<UserDTO> responseEntity = new ResponseEntity<>(userDTO, HttpStatus.OK);
         return responseEntity;
     }
 }
