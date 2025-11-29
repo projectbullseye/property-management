@@ -1,6 +1,5 @@
 package com.mycompany.property_management.controller;
 
-import com.mycompany.property_management.dto.PropertyDTO;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
